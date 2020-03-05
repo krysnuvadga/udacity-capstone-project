@@ -86,7 +86,7 @@ export class Events extends React.PureComponent<EventsProps, EventsState> {
       })
       this.setState({
         events: update(this.state.events, {
-          [pos]: { status: { $set: !event.staus } }
+          [pos]: { status: { $set: !event.status } }
         })
       })
     } catch {
@@ -127,7 +127,7 @@ export class Events extends React.PureComponent<EventsProps, EventsState> {
               color: 'teal',
               labelPosition: 'left',
               icon: 'add',
-              content: 'New task',
+              content: 'New Event',
               onClick: this.onEventCreate
             }}
             fluid
