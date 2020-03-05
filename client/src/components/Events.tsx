@@ -133,7 +133,7 @@ export class Events extends React.PureComponent<EventsProps, EventsState> {
             fluid
             actionPosition="left"
             value={this.state.newEventName}
-            placeholder="To change the world..."
+            placeholder="Replace this with the event title..."
             onChange={this.handleNameChange}
           />
         </Grid.Column>
